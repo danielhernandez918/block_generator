@@ -1,0 +1,18 @@
+#box {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+.row{
+    display: inline-block;
+    margin: 10px;
+}
+
+.align {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
