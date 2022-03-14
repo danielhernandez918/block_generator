@@ -13,7 +13,7 @@ const BoxForm = (props) => {
     return (
         <form onSubmit={ handleSubmit }>
             <h1>Set Color</h1>
-            <div class="align">
+            <div className="align">
                 <textarea 
                     rows="1"
                     cols="30"

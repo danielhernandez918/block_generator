@@ -4,19 +4,19 @@ import BoxForm from './components/boxComponent';
 import BoxDisplay from './components/boxDisplayComponent';
 
 function App() {
-  // const [currentBox, setCurrentBox] = useState("There are no boxes");
+  const [currentBox, setCurrentBox] = useState("There are no boxes");
   
   const[boxes, setBoxes] = useState([]);
 
   const handleNewBox = (newBox) =>{
-    // setCurrentBox(newBox)
+    setCurrentBox(newBox)
     setBoxes([...boxes, newBox])
   };
   return (
     <div className="App">
         <BoxForm onNewBox={handleNewBox}/>
-        {/* <BoxDisplay currentBox={currentBox} boxes={boxes} /> */}
-        <BoxDisplay boxes={boxes} />
+        <BoxDisplay currentBox={currentBox} boxes={boxes} />
+        {/* <BoxDisplay boxes={boxes} /> */}
     </div>
   );
 }
